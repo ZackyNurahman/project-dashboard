@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/db.css">
+</head>
+<body>
+   <div class="nav">
+    <div class="dropdown">
+        <h1>PROFILE</h1>
+        <button onclick="myFunction()" class="dropbtn">
+            <img src="../image/user-profile-svgrepo-com.svg"></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="dashboard.html">home</a>
+          <a href="#">about</a>
+          <a href="login.html">log out</a>
+        </div>
+      </div>
+        </div>
+        <div class="sidebar">
+          <header>MENU</header>
+          <ul>
+            <li><a href="dashboard.html">home</i></a></li>
+            <li><a href="siswa.html">SISWA</i></a></li>
+            <li><a href="guru.html">GURU</i></a></li>
+          </ul>
+        </div>
+    </div> 
+</div>
+    </div>
+    <div class="hero">
+      <h1>DATA SISWA</h1>
+      <table border="3">
+        <tr>
+            <td>IBU YULI</td>
+            <td>PT JAYA</td>
+            <td>SERKETARIS</td>
+            <td><a href="#">EDIT</a></td>
+            <td><a href="#">DELETE</a></td>
+        </tr>
+        <tr>
+            <td>BAPA UJANG</td>
+            <td>PT JAYA</td>
+            <td>KARYAWAN</td>
+            <td><a href="#">EDIT</a></td>
+            <td><a href="#">DELETE</a></td>
+        </tr>
+        <tr>
+            <td>BAPA ACENG</td>
+            <td>PT JAYA</td>
+            <td>MARKETING</td>
+            <td><a href="#">EDIT</a></td>
+            <td><a href="#">DELETE</a></td>
+        </tr>
+      </table>
+    </div>
+   </div>
+   <script>
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+   </script>
+</body>
+</html>
