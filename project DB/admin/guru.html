@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/db.css">
+</head>
+<body>
+   <div class="nav">
+    <div class="dropdown">
+        <h1>ADMIN</h1>
+        <img src="../image/user-profile-svgrepo-com.svg" onclick="myFunction()" class="dropbtn">
+        <div id="myDropdown" class="dropdown-content">  
+          <a href="#">home</a>
+          <a href="../admin/form.html">form</a>
+          <a href="../admin/login.html">log out</a>
+        </div>
+      </div>
+        </div>
+        <div class="sidebar">
+          <header>MENU</header>
+          <ul>
+            <li><a href="siswa.html">SISWA</i></a></li>
+            <li><a href="guru.html">GURU</i></a></li>
+            <li><a href="pegawai.html">PEGAWAI</i></a></li>
+          </ul>                                                         
+        </div>                                                          
+    </div> 
+</div>
+    </div>
+    <div class="hero">
+      <h1>TABLE GURU</h1>
+      <table border="3">
+        <thead>
+            <td>NAMA LENGKAP</td>
+            <td>NIK</td>
+            <td>STATUS</td>
+            <td>JENIS KELAMIN</td>
+            <td>ACTION</td>
+        </thead>
+        <tr>
+          <td>MUHAMMAD IRSYAD </td>
+            <td>000000</td>
+            <td>GURU</td>
+            <td>LAKI-LAKI</td>
+            <td><a href="form.html"><img src="../image/pen-tool-svgrepo-com.svg"></a><a href="#"><img src="../image/delete-2-svgrepo-com.svg"></a></td>
+        </tr>
+        <tr>
+            <td>AWLIYA DHIPA</td>
+            <td>1111111</td>
+            <td>GURU</td>
+            <td>LAKI-LAKI</td>
+            <td><a href="form.html"><img src="../image/pen-tool-svgrepo-com.svg"></a><a href="#"><img src="../image/delete-2-svgrepo-com.svg"></a></td>
+        </tr>
+        <tr>
+          <td>BAGAS SAPUTRA</td>
+          <td>22222222</td>
+          <td>GURU</td>
+          <td>LAKI-LAKI</td>
+          <td><a href="form.html"><img src="../image/pen-tool-svgrepo-com.svg"></a><a href="#"><img src="../image/delete-2-svgrepo-com.svg"></a></td>
+      </tr>
+      </table>
+      </table>
+    </div>
+   </div>
+   <script>
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+  </script>
+</body>
+</html>

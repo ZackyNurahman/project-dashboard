@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+html, body {
+    min-height: 100%;
+    background-color: #04111e;
+    font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    body, div, form, input,  label, p { 
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-size: 14px;
+    color: white;
+    line-height: 22px;
+    }
+
+    h1 {
+    position: absolute;
+    margin: 0;
+    font-size: 40px;
+    color: #fff;
+    z-index: 2;
+    line-height: 83px;
+    }
+
+    .testbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding: 20px;
+    }
+
+    form {
+    width: 140vh;
+    padding: 20px;
+    border-radius: 6px;
+    background: #04111e;
+    box-shadow: 0 0 8px  #669999; 
+    }
+
+    .banner {
+    position: relative;
+    height: 250px;
+    background-image: url("https://img.freepik.com/free-vector/digital-glowing-technology-lines-with-metwork-wire-mesh_1017-28404.jpg?w=1380&t=st=1674404514~exp=1674405114~hmac=02299e67727bef6cd3ff6680169694d8007f8fe20f54d7452c559b833f725b6d");  
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+    
+    .banner::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.2); 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    }
+    
+    input {
+    width: calc(100% - 10px);
+    padding: 5px;
+    }
+    
+    .item input, .item select{
+    border: 1px solid transparent;
+    box-shadow: 0 0 3px 0  #669999;
+    color: black;
+    }
+
+    .item {
+    position: relative;
+    margin: 10px 0;
+    }
+
+    .item span {
+    color: red;
+    }
+   
+    .colums {
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+    flex-wrap:wrap;
+    }
+
+    .colums div {
+    width:48%;
+    }
+
+    .item i {
+    right: 1%;
+    top: 30px;
+    z-index: 1;
+    }
+    
+    input[type=radio], input[type=checkbox]  {
+    display: none;
+    }
+
+    label.radio {
+    position: relative;
+    display: inline-block;
+    margin: 5px 20px 15px 0;
+    cursor: pointer;
+    }
+    
+    .question span {
+    margin-left: 30px;
+    }
+
+    label.radio:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    }
+   
+    label.radio:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    width: 8px;
+    height: 4px;
+    border: 3px solid  #669999;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    opacity: 0;
+    }
+    
+    input[type=radio]:checked + label:after {
+    opacity: 1;
+    }
+   
+    form .button input{
+       height: 80%;
+       width: 30%;
+       margin: 5px;
+       margin-top: 30px;
+       margin-left: 130px;
+       border-radius: 5px;
+       border: none;
+       color: white;
+       font-size: 18px;
+       font-weight: 500;
+       letter-spacing: 1px;
+       cursor: pointer;
+       transition: all 0.3s  ease;
+       background: #669999;
+    }
+    
+    .klik{
+        height: 35px;
+       width: 30%;
+       margin: 5px;
+       margin-top: 40px;
+       margin-left: 350px;
+       border-radius: 5px;
+       border: none;
+       color: white;
+       font-size: 18px;
+       font-weight: 500;
+       letter-spacing: 1px;
+       cursor: pointer;
+       transition: all 0.3s  ease;
+       background: #669999;
+    }
+
+    .klik a{
+        text-decoration: none;
+        color: white;
+    }

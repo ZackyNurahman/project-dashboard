@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/rm.css">
+</head>
+<body>
+    <div class="testbox">
+        <form action="/">
+          <div class="banner">
+            <h1>INPUT DATA</h1>
+          </div>
+          <div class="colums">
+            <div class="item">
+              <label for="fname"> NAMA DEPAN<span>*</span></label>
+              <input id="fname" type="text" name="fname" required/>
+            </div>
+            <div class="item">
+              <label for="lname"> NAMA BELAKANG<span>*</span></label>
+              <input id="lname" type="text" name="lname" required/>
+            </div>
+            <div class="item">
+              <label for="email">EMAIL<span>*</span></label>
+              <input id="email" type="text"   name="email" required/>
+            </div>
+            <div class="item">
+              <label for="notlp">NO TELEPON<span>*</span></label>
+              <input id="notlp" type="text"   name="notlp" required/>
+            </div>
+            <div class="item">
+              <label for="nik/nip">NIK/NIP<span>*</span></label>
+              <input id="nik/nip" type="text"   name="nik/nip" required/>
+            </div>
+            <div class="item">
+              <label for="jeniskelamin">JENIS KELAMIN<span>*</span></label>
+              <input id="jeniskelamin" type="text" name="jeniskelamin" required/>
+            </div>
+          </div>
+          <div class="question">
+            <label>STATUS</label>
+            <div class="question-answer">
+              <div>
+                <input type="radio" value="none" id="radio_1" name="type"/>
+                <label for="radio_1" class="radio"><span>SISWA</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="none" id="radio_2" name="type"/>
+                <label for="radio_2" class="radio"><span>GURU</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="none" id="radio_3" name="type"/>
+                <label for="radio_3" class="radio"><span>PEGAWAI</span></label>
+              </div>
+             <div class="button">
+              <input type="submit" href="siswa.html" value="ADD">
+              <input type="reset" value="RESET">
+              <button onclick="" class="klik"><a href="siswa.html">BACK</a></button><br>
+             </div>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
